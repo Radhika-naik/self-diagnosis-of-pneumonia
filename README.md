@@ -1,0 +1,2 @@
+# self diagnosis of pneumonia 
+ 
