@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumonia Detected</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/overlay_style.css') }}">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="overlay-content">
+            <div class="overlay-wrapper">
+            <img src="{{ url_for('static', filename='images/pneumonia_detected_image.jpg') }}" alt="Pneumonia Detected">
+            <p>Pneumonia detected! Please visit this link and book a consultation with a doctor sooner.</p>
+            <a href="https://www.practo.com/bangalore/pulmonologist" class="button">Book Consultation</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
