@@ -17,7 +17,7 @@ db = SQLAlchemy(app)
 
 IMAGE_SIZE = (150, 150)
 current_directory = os.path.dirname(os.path.abspath(__file__))
-UPLOAD_FOLDER = 'static\\uploads'
+UPLOAD_FOLDER = 'static/uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 app.config['UPLOAD_FOLDER'] = os.path.join(current_directory, UPLOAD_FOLDER)
 
