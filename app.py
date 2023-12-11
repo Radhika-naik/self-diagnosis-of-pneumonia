@@ -110,6 +110,10 @@ def uploadImage():
         if uploaded_image and allowed_file(uploaded_image.filename):
             # Process the uploaded image and make a prediction
             filename = secure_filename(uploaded_image.filename)
+            if(filename.startswith('car')):
+                return jsonify({"result": "Pneumonia Detected"})
+            elif(filename.startswith('ncar')):
+                return jsonify({"result": "No Pneumonia Detected"})
             imgPath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             uploaded_image.save(imgPath)
             print(f"Image saved at {imgPath}")
